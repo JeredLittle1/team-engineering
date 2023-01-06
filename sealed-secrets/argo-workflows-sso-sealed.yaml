@@ -1,29 +1,21 @@
-{
-  "kind": "SealedSecret",
-  "apiVersion": "bitnami.com/v1alpha1",
-  "metadata": {
-    "name": "argo-server-sso",
-    "namespace": "argo-workflows",
-    "creationTimestamp": null,
-    "annotations": {
-      "sealedsecrets.bitnami.com/cluster-wide": "true"
-    }
-  },
-  "spec": {
-    "template": {
-      "metadata": {
-        "name": "argo-server-sso",
-        "namespace": "argo-workflows",
-        "creationTimestamp": null,
-        "annotations": {
-          "sealedsecrets.bitnami.com/cluster-wide": "true"
-        }
-      },
-      "type": "Opaque"
-    },
-    "encryptedData": {
-      "client-id": "AgCFiYq4qwlOTEOlyHkHd2LbHywsLI/gtV0X/2Owu/BnP1bqh4EGFvuC+pU1UTE/8XnJDyY6ZCpBHCZD4vsslxDpL5maT2FSRxfie0pz6/xcVOrBUj7BDQXk+igQFl3Ik/Ljt+6f42TXabNPsmoPyGor6LjYCLXkTqV/XI5S/8sNbrye6pixYuGEcMAm6s4tgBrNxnsS7vUg9rMxRxlHg7k2wvM3UUQ70Li1HH4Fr6CeqZa8Xahx8LhmXjSc2XIJhG8jS0uF98wtbhbO5cahot/EtyzaGVHjnHPYxazSImvVR1+FsElkkVsdTdP0N453k8gZX+3e4ZT9Q6zmXj6qx3Nz/L1bKvNepeGrLnm0GRs+nPZfFaIMk/VL3HwYM64iX+/H2QjoRLiUiLYVfs2M8UWDJqWwdFYeeRJMA6VIvkyUVRVu/Fi2Sl2xudIuvnwM9BaZ2cYeK9bKDtFAWrODZEd3jvvoH55UfG6Y58SWthhHyvxbhcpquHPMCnTFJY3i9UAdDTmsJIqVmGX0GTreLVQOWjG1tLDP97Avaz31qNB8tIN/9XrOW7aohBCLvMttpRBDvYFGDW//gPtR4qKRF4mW1vbbJtX/r6rd/RfZ7ejVksrFMfTJKTCra+n0wZC9ICovFVQBeoy9h+6ejz9BzFh2yhCaLb+0587UYXt6E6DYmOe1sMUAjsVVwn8Dl1JkGEAAZ/MD+chmGPh20VWBkX7bBwYJk619mZjPu0/mYLILmA9ttts2FHs3j82eoPX2hTGGBD1TRuLRPLyX5KUVLWRjhALH+ycfaFM=",
-      "client-secret": "AgALs49VK6YpZRdvil9kF6pyGMny+PETd17y+uazkge4NI5+/JUByjATYWs/uexORXSNseIDIUPTt1XaAn6pGazXbmNtMbKdZWK7tMrPIR3krtNZpA++LA77S+UqWY24hOetXulMiwHRPA6YaYCTLlwwWtMXz6sGZX4rDphOiV4vd0PjRXjYRnQ5/NPB4124+9Nf9kZNXfdaZxuvPQh6aqrM34j0AwDW49XGTtVdVNJNzESLU6RUjDcpPazN/W+Ha2/pv2+Vl191Q3BoZm6V5JeipkD4de4m0QuPRlX+wweLEEnopHEt7mAmrDqvAd91SZtl9QcgzNDxF7sm1WV2kjQZRSW2slhzPEcccZVFTHrMCKoA+9ROf7D5luZqxTVTUYBWr6mQMyzWemNa8JjGUKf2QAbZc+iXKHwNSf/cMUC+ghcvtNLsgXEZxZTrifNMiRbRme32MI2APukZxI9opJmTtPbiXk9RTuSjZUZuoPmD/+m6L8s2lx4KC05DdfkyURBSzcR8bBWB4jKKeb6N7WJ/NR5Q1lhjLMLGypJ5E2dze/xn96FxZ6Npuo5I0o0ELdk9r/vOdjjzSVzPOHlTx6UDDmZGLxjgOxafZcN64cvG8tJIoXMHJR7EBArYM1RaAB/imkP96bT+A7Wk/QMEmCZSbJQbSZ9xKYLrikwvuDRiTsouxXlGc7unjOFj92nQTrAnKWgSWeK28cbY3+T+ef/V2i2o7HLGG30IErVVWIsOFXVaqw=="
-    }
-  }
-}
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  annotations:
+    sealedsecrets.bitnami.com/cluster-wide: "true"
+  creationTimestamp: null
+  name: argo-server-sso
+  namespace: argo-workflows
+spec:
+  encryptedData:
+    client-id: AgArtgihq4xW60wGbpO+nLLus74xCCP6U8QDkfM2EAHoE5rVuDtCiy5JvXanqd6XdRxBbxmXG0mQd8eDsnswnrf+VQYVNJzc5Mz2TkvV88QY61Ku17O8WhPTu87lap6MStvte9k05KDdG9ThtM/yT6YxiO+TBVor+902MtRoInJp71rT3wPAJPEkZrWVm6+Xkfl/OpEZI5cKtWHYZma3xjHbIV6seaNn3M8yuUEJ8NuFsExXaDfOg1DIpKtx2oNfk4R2+rNG9JzmpiLZeNi5dc1rYRolR7a7+ed9yPZ8EjSKQ5J+IO8M2UxCWNalSYzVLXUtDNaZzwceqdaaY0rc+9mEsFhK0r3faKQ8Bcr5qqJszQSP8q3lZiCpoV5rQx0w60/y2iZET0NWOPV5m5Po3tB3ptEtnCsFQKAPwZ3VUtA3xqbf7f7X6DdTjPvaESdgpAqVBUIUxRG4cythff6KvkqZyjZKg2VywWv0gsMoPI5vwCTXCSYXqeQKEodNwUPJQdbzVbXJsmU7AsZxbVQv2SGtbu/mQGdvFcM156hE4FAAJRvWh5bTM+h4taa9K16dpSbDh1PBA1TqAQe8rbIU9gLw90PqcLnzr/fLs4XVjWKS6g9iREb7w2qvWG5+Nj+gD+KN44301lQLzF3wgls0CFUMzG4N23IvtBQF1J1yZVPlM36yxJTER8KHjlluqNd5ykA85MElCndGSOLJSawRR/EjaSIBv6VQWktN7DUio9FEtsRxnJCGiFkBjIrX7zXnXHQd8CfQqe9JvBOljX6aEiJ1TKTVMJpADEE=
+    client-secret: AgBQAP7QRUz/+x6Aw1RYsptpYYp9lPrR+xrFyg5obAoHACbLBxWTRoIntiu5vrIQR8UKwNDOdD0Z07vURncJDC/aEaEPxsXrjWgdoSRVaYl//rCv9hI4eNIr1wRAmI9fcM5DhuHkcHuC6nb/4awNVxDiKytDvSnConayH+nNItdXUv07JOWVkebg8FU1rX+H0HeuWLTsC3VAvpsD/um0nau0OZ0aQQu4w4tnSF8MCDLp7crD0lBRQU0qrcIkr4l5dY6/dG96hC6YhpBSbtABvdwDnoag1KjsnO+1H8ZF/VYNdFe2ifTgibpI6Wd/WYadl7vUNlN7DXfDtQ4dOAs5cGlPuci8pwa/HJhBMMEOy9quyTu5aTswxRq36kvbtZXQE+ZvvSudR5b1V289xxZU3xMFE8RZaqpUpQ7mnsCZ2V5gmcDiLc130HunSCxXdvCAyY5huWqKsK0FtX42fO+7zky+N72UtqQJ9E9F5lDB0IOuaC4kMV+OaSwEjJMzzsNG+TUIaZWaEM19YX2RJB5Gq9V0T1PqJI+UzKbB9fex+OqaC/avisyqDnptOYSMhqd2gR64wRrpJZEEBlAkuKWXJb8z68vGcuM4o8s6w46+I6p0Uptj26TUklMjqkHJFRXiNk+ssDJ+7QxEo6R2I67RJc6UcbZ9QAIgEtKjwjct+TzO11piyuYMdDlKeqxsjFp/4D49E7FWxK5WbJQMehtXV8nCKVyuOtFD0IlsAaPK9GtwKML4LA==
+  template:
+    metadata:
+      annotations:
+        sealedsecrets.bitnami.com/cluster-wide: "true"
+      creationTimestamp: null
+      name: argo-server-sso
+      namespace: argo-workflows
+    type: Opaque
+
