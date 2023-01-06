@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: airflow
+  name: airflow-master
   namespace: argocd
 spec:
   project: default
@@ -11,7 +11,7 @@ spec:
     path: airflow/
   destination: 
     server: https://kubernetes.default.svc
-    namespace: airflow
+    namespace: airflow-master
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
