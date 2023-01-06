@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: airflow
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/JeredLittle1/argo-master-app
+    targetRevision: HEAD
+    path: airflow/
+  destination: 
+    server: https://kubernetes.default.svc
+    namespace: airflow
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+    automated:
+      selfHeal: true
+      prune: true
