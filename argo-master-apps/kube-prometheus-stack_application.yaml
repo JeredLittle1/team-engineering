@@ -1,21 +1,21 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: grafana-master
+  name: kube-prometheus-stack-master
   namespace: argocd
 spec:
   project: default
   source:
     repoURL: https://github.com/JeredLittle1/argo-master-app
     targetRevision: HEAD
-    path: grafana/
+    path: kube-prometheus-stack/
     helm:
       values: |
         grafana:
           local: true
   destination: 
     server: https://kubernetes.default.svc
-    namespace: grafana
+    namespace: kube-prometheus-stack
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
