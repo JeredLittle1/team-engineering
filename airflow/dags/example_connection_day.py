@@ -1,12 +1,16 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime
-
+from airflow.hooks.base import BaseHook  # Deprecated in Airflow 2
+import os
 
 def helloWorld():
-    print("Hello world!")
+    # MY_COOL_AIRFLOW_CONNECTION
+    print(os.environ)
+    connection = BaseHook.get_connection("MY_COOL_AIRFLOW_CONNECTION")
+    #print(f"{connection.host} {connection.schema}!")
 
-with DAG(dag_id="hello_world_dag",
+with DAG(dag_id="test_connections",
          start_date=datetime(2021,1,1),
          schedule_interval="@hourly",
          catchup=False) as dag:
