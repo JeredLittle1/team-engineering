@@ -12,13 +12,12 @@ spec:
     ref: myRepo
     # Will be changed when v2.6 is released: https://github.com/argoproj/argo-cd/pull/10432
     helm:
-      parameters:
-        - name: airflow.secret[0].envName
-          value: AIRFLOW_CONN_MY_COOL_AIRFLOW_CONNECTION
-        - name: airflow.secret[0].secretName
-          value: my-cool-airflow-connection
-        - name: airflow.secret[0].secretKey
-          value: AIRFLOW_CONN_MY_COOL_AIRFLOW_CONNECTION
+      values: |
+        airflow:
+          secret:
+            - envName: AIRFLOW_CONN_MY_COOL_AIRFLOW_CONNECTION
+              secretName: my-cool-airflow-connection
+              secretKey: AIRFLOW_CONN_MY_COOL_AIRFLOW_CONNECTION
   destination: 
     server: https://kubernetes.default.svc
     namespace: airflow
