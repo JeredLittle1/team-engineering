@@ -5,17 +5,15 @@ metadata:
   namespace: argocd
 spec:
   project: default
-  sources:
-      # This allows remote value references because of: https://github.com/argoproj/argo-cd/pull/10432
-    - repoURL: https://github.com/JeredLittle1/team-engineering.git
-      targetRevision: master
-      ref: thisRepo
-    - repoURL: https://github.com/JeredLittle1/argo-master-app
-      targetRevision: HEAD
-      path: airflow/
-      helm:
-        valueFiles:
-          - $thisRepo/argo-master-apps/airflow/values.yaml
+  source:
+    repoURL: https://github.com/JeredLittle1/argo-master-app
+    targetRevision: HEAD
+    path: airflow/
+    ref: myRepo
+    # Will be changed when v2.6 is released: https://github.com/argoproj/argo-cd/pull/10432
+    helm:
+      valueFiles:
+        - argo-master-apps/airflow/values.yaml
   destination: 
     server: https://kubernetes.default.svc
     namespace: airflow
