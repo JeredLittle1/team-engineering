@@ -17,7 +17,7 @@ spec:
           secret:
             - envName: AIRFLOW_CONN_MY_COOL_AIRFLOW_CONNECTION
               secretName: my-cool-airflow-connection
-              secretKey: AIRFLOW_CONN_MY_COOL_AIRFLOW_CONNECTION
+              secretKey: AIRFLOW_MY_COOL_AIRFLOW_CONNECTION
   destination: 
     server: https://kubernetes.default.svc
     namespace: airflow
