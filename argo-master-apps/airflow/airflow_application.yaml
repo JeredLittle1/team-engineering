@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: airflow-master
+  namespace: argocd
+spec:
+  project: default
+  sources:
+      # This allows remote value references because of: https://github.com/argoproj/argo-cd/pull/10432
+    - repoURL: https://github.com/JeredLittle1/team-engineering.git
+      targetRevision: master
+      ref: thisRepo
+    - repoURL: https://github.com/JeredLittle1/argo-master-app
+      targetRevision: HEAD
+      path: airflow/
+      helm:
+        valueFiles:
+          - $thisRepo/argo-master-apps/airflow/values.yaml
+  destination: 
+    server: https://kubernetes.default.svc
+    namespace: airflow
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+    automated:
+      selfHeal: true
+      prune: true
