@@ -12,9 +12,9 @@ spec:
     ref: myRepo
     # Will be changed when v2.6 is released: https://github.com/argoproj/argo-cd/pull/10432
     helm:
-      values: |
-        airflow:
-          secret:
+      parameters:
+        - name: airflow.secret
+          value:
             - envName: AIRFLOW_CONN_MY_COOL_AIRFLOW_CONNECTION
               secretName: my-cool-airflow-connection
               secretKey: AIRFLOW_CONN_MY_COOL_AIRFLOW_CONNECTION
