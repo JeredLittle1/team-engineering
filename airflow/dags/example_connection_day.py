@@ -7,7 +7,7 @@ import os
 def helloWorld():
     # MY_COOL_AIRFLOW_CONNECTION
     print(os.environ)
-    connection = BaseHook.get_connection("MY_COOL_AIRFLOW_CONNECTION")
+    connection = BaseHook.get_connection("my_cool_airflow_connection")
     #print(f"{connection.host} {connection.schema}!")
 
 with DAG(dag_id="test_connections",
