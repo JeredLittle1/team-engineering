@@ -1,5 +1,0 @@
-airflow:
-  secret:
-    - envName: "AIRFLOW_CONN_MY_COOL_AIRFLOW_CONNECTION"
-      secretName: "my-cool-airflow-connection"
-      secretKey: " AIRFLOW_CONN_MY_COOL_AIRFLOW_CONNECTION"
