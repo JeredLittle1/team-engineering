@@ -4,7 +4,7 @@ from datetime import datetime
 
 
 def helloWorld():
-    print("Hello world!")
+    print("Hello World")
 
 with DAG(dag_id="hello_world",
          start_date=datetime(2021,1,1),
