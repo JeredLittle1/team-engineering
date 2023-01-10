@@ -1,0 +1,21 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  annotations:
+    sealedsecrets.bitnami.com/cluster-wide: "true"
+  creationTimestamp: null
+  name: google-client-info
+  namespace: airflow
+spec:
+  encryptedData:
+    client-id: AgAQlspS5Bf2wVC9HvRlP1Q9a3jMB1rbP9q68RTYQXEpzIuLxOLMGk7xsKN3T9nGjlVHOIJCkhax/xiPHBxeFn/2nkzZwTkLkmlimJjiyG3SKruM4NPEbBVqszt1jIdlAFnVg+THR1RIcUOgb1sJwj4xsOYAM5n1IOx/NJLeaF0GDzzzswNqEHtuUmFWP1U2VEZyHGwaIs0WYgynPkERnHguEM/JAhgPDyIkvO6pC8kjUmDIALAAavMsv1DBoHqGo/6n7V2SxsM2e2SE6Qi+Aqq072gbts4iHgKO/fC0A7Z9uR3Yg+kGyu0WgVo6CVPW113cYl3MKK75iu3Hi34865gGSaHJ/SSIAwuxIaEXSWumRPA8OqRvw78IsC76r5uTC12CeCga3KfPmiIY9CXi1EuLESmvdU8W4SEeVWy9582igHbhLZpo0ls8qbC6bG+xanqtI0aFy79P1yYoUQjm7y7B0D6U5+Hd93EA9PU9OZXfg2qZd9ECcpa8rowHt0UeH2COejxQbqOUXwngF4iiCoH+OhG0aJDiYQNpOohxgoVDzLcprvKkakMCr1lcG0KkICJVW+hYULkd5JueDD3xPt9GtQG9Zw9tlC96RLKsY/jRtjKCluwAVP6n5MaG2R0T9kb/ZX7MGg4Ppo4/1XN8XDNzwPlMayQd+QhgVLiqj9NnDXhIJFg60+k6scrtQg5OF/tBCfK61hFi/BSGWNZ/7UKC0O++tvpZtqFt0DnW8BpmnjiyrTh3IZAplWZKsr7Vsnhu+ZI+mIU2EV4SJ7xIre1ve8DD584Du9U=
+    client-secret: AgAiBBfosyRsybQtPzPzehRHaIuW0tTMy3zCCOLL0WeC2W7Bd/XJJLkZnkewOriGxZS8kcMVoiQIfN6k67HxM6PFFx/3it5O7Vchxe2Q+ews98CO/4xzNZiJwE0FOwZkuj5JFjmDY/AfH3n1IHQYCKXHMJXDlgya+jD6szBbOx+CoQ7AzP+9hUB2M7oIRy2kIBhRKmMZHUIUuUeS3XyeJFOa20r95BitcoD/y52vnqMpbnJoDYCpTx6+oq2ZjtKqI/99crS3Lcn66RvOr/hkMmpWuuW77NQrnp0nKZpTPbjSbLMJNBJVwKcoItA0xeHkfxoQpGsgSy5naClfbpTkYUlV/WkfzglrS9lIW6k11Cyiun4Leh6ykrqErDs7TxlIRb7FS5CVPC4CLl/vC/FIeNn91JMzGrvQf8EPKgJluwBv1OeV3rI2hdBkVvHd3Z48Nk3vIzj6jml7by1eczw+LnZyMAu5CDTHgTI1a5rXVyzl8rBqhFluJUTGynivo912Ob3j76SqL5nh9SGlUXeG/iwP93eW5k2q+rWrJNMs0/nBSdbJa112cUB78a4cASIm30BALY0ZkoFqjQT5WAeQAIl+GVrZbN3WomzPa2E3EVY7dQD2dL0VHknsNQaIekau4R/FNg9SGsEGypeByZRy16CpWv5HQNcp80uTEsy7GNp5QTT3TGosxzRsvx2X+1HdxVtkeCumASzKAp/TbBZ6EI03t0LMD2rASyJ0GioqRIygJsttBA==
+  template:
+    metadata:
+      annotations:
+        sealedsecrets.bitnami.com/cluster-wide: "true"
+      creationTimestamp: null
+      name: google-client-info
+      namespace: airflow
+    type: Opaque
+
