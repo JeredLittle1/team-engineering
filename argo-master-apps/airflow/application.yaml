@@ -19,10 +19,10 @@ spec:
               secretName: my-cool-airflow-connection
               secretKey: AIRFLOW_MY_COOL_AIRFLOW_CONNECTION
             - envName: GOOGLE_CLIENT_ID
-              secretName: google-client-info
+              secretName: google-oauth-client-info
               secretKey: client-id
             - envName: GOOGLE_CLIENT_SECRET
-              secretName: google-client-info
+              secretName: google-oauth-client-info
               secretKey: client-secret
           image:
             repository: gcr.io/gcp-test-jlittle/custom-airflow-2.5.0
