@@ -27,6 +27,11 @@ spec:
           image:
             repository: gcr.io/gcp-test-jlittle/custom-airflow-2.5.0
             tag: v1.0
+          mountConfig:
+            github:
+              repoUrl: https://github.com/JeredLittle1/team-engineering.git
+              branch: master
+              rev: HEAD
   destination: 
     server: https://kubernetes.default.svc
     namespace: airflow
