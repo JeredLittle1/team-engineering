@@ -18,10 +18,10 @@ spec:
             - envName: AIRFLOW_CONN_MY_COOL_AIRFLOW_CONNECTION
               secretName: my-cool-airflow-connection
               secretKey: AIRFLOW_MY_COOL_AIRFLOW_CONNECTION
-            - envName: AIRFLOW__GOOGLE__CLIENT_ID
+            - envName: GOOGLE_CLIENT_ID
               secretName: google-client-info
               secretKey: client-id
-            - envName: AIRFLOW__GOOGLE__CLIENT_SECRET
+            - envName: GOOGLE_CLIENT_SECRET
               secretName: google-client-info
               secretKey: client-secret
           image:
