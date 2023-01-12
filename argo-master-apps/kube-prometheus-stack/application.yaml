@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: kube-prometheus-stack-master
-  namespace: argocd
+  namespace: compute-plane
 spec:
   project: default
   source:
@@ -15,7 +15,7 @@ spec:
           local: true
   destination: 
     server: https://kubernetes.default.svc
-    namespace: kube-prometheus-stack
+    namespace: compute-plane
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
