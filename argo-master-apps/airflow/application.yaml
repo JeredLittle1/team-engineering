@@ -9,7 +9,6 @@ spec:
     repoURL: https://github.com/JeredLittle1/argo-master-app
     targetRevision: HEAD
     path: airflow/
-    ref: myRepo
     # Will be changed when v2.6 is released: https://github.com/argoproj/argo-cd/pull/10432
     helm:
       values: |
