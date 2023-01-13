@@ -5,7 +5,7 @@ metadata:
     sealedsecrets.bitnami.com/cluster-wide: "true"
   creationTimestamp: null
   name: my-cool-airflow-connection
-  namespace: airflow
+  namespace: compute-plane
 spec:
   encryptedData:
     AIRFLOW_MY_COOL_AIRFLOW_CONNECTION: AgBcm1Oih30Mm1UwhyYSafMpvDOtxJ6I0Ll4KMtratNjNWdk9LGXjqC+j2DSHc13jdueJ+uZIDSh+WsrL/Rva61vs3NgGpM1Z5vw2DzZyqy2H3/30SBGBGT6pSQjihLFtCJWzLFLJvkDXhjSjvf355RsFOHzNJgNeJSFQfrUTPHM1BR5dBdIl38m5dPWnDCGtSdtFbOcaxR5NOQw1fHHemSxc0rhh47FuouGgAXPeP8sElO46EjJ80/HvjKtmPwGxZUl3mHD1SPCOdWhA2yK4vFO8a734gCWNwihzgGFs+hbADb7Q/+BPKLf++jhqMhwhFHOBbP2K9pytnLJSp0OW3mnlLOQyGbH3EPXqOuuSZSmUqhQ3QCaOSjhentRPo/2/MS8AgwHjIYLHm7BdJ5sn+MQStvtoTdqPteRphi0aZbgnIRYbciHlSGhh+4kMV3i0x4cHoz8639UOZNKzM4mfRo0wLjM3GX+lk9Q/QeDop3TXGRPrNkYKmpU4/R/Y6nhyy+BCxm9cQ4zxeIbyYXXTG1xQlaB6k5ZA8DSpmlDKqrn8Ymgl1agu9UOCKdbDK4Zvf0PBFEMW6d4rlz10lAFmkYlO36vX60azk96f2w4Au6+A9TM/i2GFd7/S9Ksu8y0TkB/V655zcMHjJ7fgp6OSHY313bHZ5AJU1Nzi3+vn2qqu4N59frP7Z8y8+d7pvOyib3MA8qwqfG45gdmw5/D5HwVfT+VpwPw8lUwVDrKUkMU6cA7hl6M7w==
@@ -15,6 +15,6 @@ spec:
         sealedsecrets.bitnami.com/cluster-wide: "true"
       creationTimestamp: null
       name: my-cool-airflow-connection
-      namespace: airflow
+      namespace: compute-plane
     type: Opaque
 

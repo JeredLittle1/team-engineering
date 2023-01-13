@@ -5,7 +5,7 @@ metadata:
     sealedsecrets.bitnami.com/cluster-wide: "true"
   creationTimestamp: null
   name: admin-user
-  namespace: kube-prometheus-stack
+  namespace: compute-plane
 spec:
   encryptedData:
     password: AgBv+8U0D2i0icjkoVo979kkCEAdrzR/U0WI3i3CY+6bL4N4rNDRRvLNRwEWffagt6ymTGTXKc55bfZB8ave2Cf0GkI65FQkDyXM1Ki3eN9XwUYG+L9UwsqLl6G7bpdtK6VmZXYQE5EMyfHPs8/EUib1sseGAV8JaKHQNv/Ahgw0gX+iYJQJp0renhIlccR+uNuEEZ6Az0etGWvdg3G9T8GRR8IGeNMDbv95g9JnShQJoSUBKo7UXIPdKlbass44DzsgeylfG+FyFgEg9mgTwx2liax9JIKksqsN9aZGvh75ZAGrsZdq9gCZs25KRJ7QwgH2M+Pnw63veosbBhXTwuPgBEVvDz7KuN00W93Bv/M1YiR9iobTs0q2L22sxbHpwFoYPF6kf943/9jKkKjUl0IharNb7kG9sGB6+hIUjnSl6SKArWbICQne12hcEj+UQflyrohaCICHN1wkXmEppSQbMSyLPNP+DIhFkVQEIViusO09ZvAMaEEXkuGn0tuhc3yJR8qL+C/Kk0twE7urW+QtqcVO8OegpkXOvkLbHXXNCsJp60e4iaCcE0Hqsh8hxGirCXpHDqVRGI786TLUiFkOYspkODKAZWGbqHixpLja7HOTLdZD7r1EK9I2/d3vcTSpYryCEo4rdhnimIPj47fDA/fS/2iktzkVMjnDmgmyGIg7R38hHmYeLdYxuxUIuoYswQZ/Bg==
@@ -16,6 +16,6 @@ spec:
         sealedsecrets.bitnami.com/cluster-wide: "true"
       creationTimestamp: null
       name: admin-user
-      namespace: kube-prometheus-stack
+      namespace: compute-plane
     type: Opaque
 

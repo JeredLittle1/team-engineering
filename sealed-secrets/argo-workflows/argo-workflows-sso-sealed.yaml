@@ -5,7 +5,7 @@ metadata:
     sealedsecrets.bitnami.com/cluster-wide: "true"
   creationTimestamp: null
   name: argo-server-sso
-  namespace: argo-workflows
+  namespace: compute-plane
 spec:
   encryptedData:
     client-id: AgArtgihq4xW60wGbpO+nLLus74xCCP6U8QDkfM2EAHoE5rVuDtCiy5JvXanqd6XdRxBbxmXG0mQd8eDsnswnrf+VQYVNJzc5Mz2TkvV88QY61Ku17O8WhPTu87lap6MStvte9k05KDdG9ThtM/yT6YxiO+TBVor+902MtRoInJp71rT3wPAJPEkZrWVm6+Xkfl/OpEZI5cKtWHYZma3xjHbIV6seaNn3M8yuUEJ8NuFsExXaDfOg1DIpKtx2oNfk4R2+rNG9JzmpiLZeNi5dc1rYRolR7a7+ed9yPZ8EjSKQ5J+IO8M2UxCWNalSYzVLXUtDNaZzwceqdaaY0rc+9mEsFhK0r3faKQ8Bcr5qqJszQSP8q3lZiCpoV5rQx0w60/y2iZET0NWOPV5m5Po3tB3ptEtnCsFQKAPwZ3VUtA3xqbf7f7X6DdTjPvaESdgpAqVBUIUxRG4cythff6KvkqZyjZKg2VywWv0gsMoPI5vwCTXCSYXqeQKEodNwUPJQdbzVbXJsmU7AsZxbVQv2SGtbu/mQGdvFcM156hE4FAAJRvWh5bTM+h4taa9K16dpSbDh1PBA1TqAQe8rbIU9gLw90PqcLnzr/fLs4XVjWKS6g9iREb7w2qvWG5+Nj+gD+KN44301lQLzF3wgls0CFUMzG4N23IvtBQF1J1yZVPlM36yxJTER8KHjlluqNd5ykA85MElCndGSOLJSawRR/EjaSIBv6VQWktN7DUio9FEtsRxnJCGiFkBjIrX7zXnXHQd8CfQqe9JvBOljX6aEiJ1TKTVMJpADEE=
@@ -16,6 +16,6 @@ spec:
         sealedsecrets.bitnami.com/cluster-wide: "true"
       creationTimestamp: null
       name: argo-server-sso
-      namespace: argo-workflows
+      namespace: compute-plane
     type: Opaque
 
