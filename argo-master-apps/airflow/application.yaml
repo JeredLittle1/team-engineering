@@ -26,6 +26,10 @@ spec:
               repoUrl: https://github.com/JeredLittle1/team-engineering.git
               branch: gcp
               rev: HEAD
+        gcp:
+          enabled: true
+          iap:
+            enabled: true
   destination: 
     server: https://kubernetes.default.svc
     namespace: compute-plane
