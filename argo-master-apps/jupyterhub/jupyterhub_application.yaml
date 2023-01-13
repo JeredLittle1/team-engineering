@@ -9,6 +9,12 @@ spec:
     repoURL: https://github.com/JeredLittle1/argo-master-app
     targetRevision: HEAD
     path: jupyterhub/
+    helm:
+      values: |
+        gcp:
+          enabled: true
+          iap:
+            enabled: true
   destination: 
     server: https://kubernetes.default.svc
     namespace: compute-plane
