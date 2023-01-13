@@ -13,6 +13,7 @@ spec:
     helm:
       values: |
         airflow:
+          local: false
           secret:
             - envName: AIRFLOW_CONN_MY_COOL_AIRFLOW_CONNECTION
               secretName: my-cool-airflow-connection
@@ -23,7 +24,7 @@ spec:
           mountConfig:
             github:
               repoUrl: https://github.com/JeredLittle1/team-engineering.git
-              branch: master
+              branch: gcp
               rev: HEAD
   destination: 
     server: https://kubernetes.default.svc
