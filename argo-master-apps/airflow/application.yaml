@@ -13,7 +13,8 @@ spec:
     helm:
       values: |
         airflow:
-          local: false
+          local: 
+            enabled: false
           secret:
             - envName: AIRFLOW_CONN_MY_COOL_AIRFLOW_CONNECTION
               secretName: my-cool-airflow-connection
