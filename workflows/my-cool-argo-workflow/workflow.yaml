@@ -1,29 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: CronWorkflow
 metadata:
-  name: omniscient-bear
-  namespace: compute-plane
-  labels:
-    example: 'true'
+  name: hello-world
 spec:
-  arguments:
-    parameters:
-      - name: message
-        value: hello argo
-  entrypoint: argosay
-  templates:
-    - name: argosay
-      inputs:
-        parameters:
-          - name: message
-            value: '{{workflow.parameters.message}}'
-      container:
-        name: main
-        image: argoproj/argosay:v2
-        command:
-          - /argosay
-        args:
-          - echo
-          - '{{inputs.parameters.message}}'
-  ttlStrategy:
-    secondsAfterCompletion: 300
-  podGC:
-    strategy: OnPodCompletion
+  schedule: "* * * * *"
+  timezone: "America/Los_Angeles"   # Default to local machine timezone
+  startingDeadlineSeconds: 0
+  concurrencyPolicy: "Replace"      # Default to "Allow"
+  successfulJobsHistoryLimit: 4     # Default 3
+  failedJobsHistoryLimit: 4         # Default 1
+  suspend: false                    # Set to "true" to suspend scheduling
+  workflowSpec:
+    entrypoint: whalesay
+    templates:
+      - name: whalesay
+        container:
+          image: docker/whalesay:latest
+          command: [cowsay]
+          args: ["🕓 hello world. Scheduled on: {{workflow.scheduledTime}}"]
