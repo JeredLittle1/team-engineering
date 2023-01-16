@@ -3,6 +3,9 @@ from airflow import DAG
 from datetime import datetime
 import os
 
+
+
+
 with DAG(dag_id="example_spark_job",
          start_date=datetime(2021,1,1),
          schedule_interval="@hourly",
@@ -10,6 +13,5 @@ with DAG(dag_id="example_spark_job",
     spark_task = SparkKubernetesOperator(
         task_id = "example_spark_job",
         application_file = "./application.yaml",
-        namespace = "compute-plane",
-        #kubernetes_conn_id='kubernetes_default',
+        namespace = "compute-plane"
     )
