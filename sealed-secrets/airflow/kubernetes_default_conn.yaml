@@ -1,0 +1,20 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  annotations:
+    sealedsecrets.bitnami.com/cluster-wide: "true"
+  creationTimestamp: null
+  name: kubernetes_default
+  namespace: compute-plane
+spec:
+  encryptedData:
+    AIRFLOW_CONN_KUBERNETES_DEFAULT: AgBvBybnAd3r0OZ/rRjVme0M5l5gxjJgHwkcUrzyKs+fqukljdVKtTN+DbOkNM9ToRoRzzieHnLYdeZK5XuY+hF7/rrGOC8TNcm5PGkQhp/katEFxwMaYBLHn5HfkFLESADrWM3ae3TlKh92pnxfptFoPejkNTrL77ZpSbFgnUBNTm1gPKcBUht2dnjA+yBRUtGNhcrDoMy3Cp9UgEMemt80Os6Ppp/k0jWRd2Yfwl8uqF9Llb5FceFP2fdutYQFuOBEKjVGfLwJ50GF6P/ulO/pE8enlQWemmPBEgYmQ4jQFPv3rcXzANKbrnZtkfyBfPg1JMfflVqYA7/xnuAsRfLlj/0PI5JJ0d9jbrZwbBHzTvKOKZpgxytmrXCTpYtTIWEe5RJjpswRg6WahQ/FLq6daJOtX+Dj7WpuMlLYapyi8s0dAVEm5R473RgxZDdw55dcqWSZxRoL/LhpXGUaN1hFA6tH2yTGbTzdXDiZPUSrhtg/3wPuYzJ2i8BzNCCy32a+wUXaaWQNrt2SAm51pGN2LjJwMhwKXM+gS9hKBfaPsB04NOa6i8v2LC1R0WZUD9Vjbx+SlKi6+db1u6tq9euNIjm5JGMFPuC2+BRNqdIRyranoUU2PjyflheqXasLW+Eyy2rUQDV+pV2XR1lG9ecdyaeAUheZgQPPEZzGShxTtDVO6bbGJcALn0ZCmF+CM2yGFFtv3FvPJPw3qWZ7jQUBvFA2yMt13bia8kXUqLRt7dh1ZA17W5jmjdK50QCQd5F0KXXd1pdMrRHVklZbXHK0bwMM8mKMt3LSjEN7CKlpiMDYDAmzWdaw09wG1X4FbhgNCHuqJZ2upRJlPf9FmkC9QYdcabuwcBSLu9mVxLQ=
+  template:
+    metadata:
+      annotations:
+        sealedsecrets.bitnami.com/cluster-wide: "true"
+      creationTimestamp: null
+      name: kubernetes_default
+      namespace: compute-plane
+    type: Opaque
+
